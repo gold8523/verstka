@@ -1,0 +1,35 @@
+.firstName {
+  color: #939393;
+}
+
+.lastName {
+  color: #F8BB10;
+  text-transform: uppercase;
+}
+
+.descr {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.grayBg {
+  background-color: #fcfcfc;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bg {
+  background: yellow;
+}
+
+ul {
+  font-size: 14px;
+}
+
+li {
+  text-transform: uppercase;
+  list-style-type: none;
+}
