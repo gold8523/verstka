@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS-селекторы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №3</h1>
+        <p>Реши задачу, используя <code>border-top: 1px solid #000</code></p>
+
+        <div class="results">
+            <style>
+                /* добавь код здесь... */
+                .topLine {
+                    border-top: 1px solid #000
+                }
+            </style>
+
+            <div class="result">
+                <div class="scope scope_4">
+                    <h3>Заголовок</h3>
+                    <hr>
+                    <article>Первый</article>
+                    <article class="topLine">Второй</article>
+                    <article class="topLine">Третий</article>
+                    <article class="topLine">Четвертый</article>
+                    <article class="topLine">Пятый</article>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/3.png" alt="Цель 3">
+            </div>
+        </div>
+</body>
+</html>

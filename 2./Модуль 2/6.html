@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS-селекторы</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №6</h1>
+        <p>Реши задачу, используя <code>text-transform</code> <code>text-decoration</code></p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                    /* добавь код здесь... */
+                    .capitalize {
+                        text-transform: capitalize;
+                    }
+
+                    .lowerCase {
+                        text-transform: lowercase;
+                    }
+
+                    .upperCase {
+                        text-transform: uppercase;
+                    }
+
+                    .underLine {
+                        text-decoration: underline;
+                    }
+
+                    .topLine {
+                        text-decoration: overline;
+                    }
+
+                    .through {
+                        text-decoration: line-through;
+                    }
+                </style>
+
+                <div class="scope scope_6">
+                    <p class="title capitalize">Текст использует значение capitalize</p>
+                    <p class="title lowerCase">Текст использует значение lowercase</p>
+                    <p class="title upperCase">Текст использует значение uppercase</p>
+                    <p class="title underLine">Это подчеркнутый текст</p>
+                    <p class="title topLine">Это надчеркнутый текст</p>
+                    <p class="title through">Это зачеркнутый текст</p>
+                    <p class="title">Не подчеркнутая <a href="#">ссылка</a></p>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/6.png" alt="Цель 6">
+            </div>
+        </main>
+    </body>
+</html>
