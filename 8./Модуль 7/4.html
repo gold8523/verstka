@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Фоновые изображения</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №4</h1>
+        <p>Повтори макет, используя в качестве фона изображения <code>helpers/goals/33.png</code> и <code>helpers/goals/333.png</code></p>
+        <p>Тебе понадобятся свойства: <code>background-size</code> и <code>background</code></p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                    /* добавь код здесь... */
+                    .c0 {
+                        background: url(helpers/33.jpg) no-repeat  center;
+                        background-size: cover;
+                    }
+                    .c1 {
+                        background: url(helpers/33.jpg);
+                        background-size: contain;
+                    }
+
+                    #id {
+                        background: url(helpers/333.jpg) no-repeat 20px 20px;
+                        background-size: contain;
+                    }
+
+                    aside {
+                        background: url(helpers/333.jpg) repeat 20px 20px;
+                        background-size: contain;
+                    }
+                </style>
+
+                <div class="scope scope_10 background">
+                    <div class="c0"></div>
+                    <div class="c1"></div>
+                    <div id="id"></div>
+                    <aside></aside>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/4.png" alt="Цель 4">
+            </div>
+        </div>
+    </body>
+</html>

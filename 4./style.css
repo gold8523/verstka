@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  margin-bottom: 200px;
+}
+
+.firstName {
+  color: #939393;
+  margin-left: 50px;
+}
+
+.lastName {
+  color: #F8BB10;
+  text-transform: uppercase;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #c9c9c9;
+}
+
+.description {
+  display: inline-block;
+  background-color: #f8f8f8;
+  width: 30%;
+  height: 400px;
+  margin-top: 5px;
+  padding: 35px 40px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.descr {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.textWrapper {
+  display: inline-block;
+  background-color: #fcfcfc;
+  width: 69%;
+  height: 400px;
+  margin-top: 5px;
+  padding: 35px 40px;
+  vertical-align: top;
+}
+
+/* .grayBg {
+  background-color: #fcfcfc;
+} */
+
+.underline {
+  text-decoration: underline;
+}
+
+.bg {
+  background: yellow;
+}
+
+.contactList {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.contactList li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 20px;
+}

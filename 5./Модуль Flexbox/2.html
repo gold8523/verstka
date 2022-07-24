@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №2</h1>
+        <p>Размести пункты меню в правой части и по центру по вертикали с помощью технологии Flexbox</p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                	.nav {
+                        height: 60px;
+                        background-color: #2e5b61;
+                    }
+
+                    .nav a {
+                        color: #fff; 
+                        padding: 0 10px; 
+                        text-decoration: none; 
+                        text-align: center;
+                    }
+                    .nav a:hover {
+                        background: #377880; 
+                    }
+
+                    .nav {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                </style>
+
+                <div class="nav">
+                    <a href="#">Главная</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/2.png" alt="Цель 2">
+            </div>
+        </div>
+    </body>
+</html>

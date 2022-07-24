@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Тени</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №1</h1>
+        <p>Для того, чтобы получить результат как на макете, установи следующие тени элементам:</p>
+        <ol>
+            <li>Радиус тени 9px, цвет черный</li>
+            <li>Сдиг тени на 6px, цвет darkred, растяжение 4px, радиус размытия подбери самостоятельно</li>
+            <li>Сдиг тени на 12px, цвет darkred, растяжение -4px, радиус размытия подбери самостоятельно</li>
+            <li>Сдвиг тени вниз на 5px, цвет #3C93D5</li>
+        </ol>
+        <p>Синтаксис:<br>box-shadow: inset <сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет></p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                	.scope {
+                		padding: 20px;
+                	}
+                	.scope div {
+                		background-color: #ffb366;
+                	}
+                	.scope .c1 {
+                		background-color: #ffff66;
+                	}
+                	#id {
+                		background-color: #98ff66;
+                	}
+                	.scope aside {
+                		background-color: #6698ff;
+                	}
+                    /* добавь код здесь... */
+                    .scope div:first-child {
+                        box-shadow: 0 0 9px 0 black;
+                    }
+
+                    .scope .c1 {
+                        box-shadow: 6px -6px 0 4px darkred;
+                    }
+
+                    #id {
+                        box-shadow: -12px 12px 9px -4px darkred;
+                    }
+
+                    .scope aside {
+                        box-shadow: 0 5px 0 0 #3C93D5;
+                    }
+                </style>
+
+                <div class="scope scope_1">
+                    <div></div>
+                    <div class="c1"></div>
+                    <div id="id"></div>
+                    <aside></aside>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/1.png" alt="Цель 1">
+            </div>
+        </div>
+    </body>
+</html>

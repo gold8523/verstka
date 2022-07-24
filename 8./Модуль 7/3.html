@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Рамки, градиент</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №3</h1>
+        <p>Повтори макет. Значения всех закруглений - 20px, новые цвета добавлять не нужно, переходы от одного блока к другому</p>
+
+        <div class="results">
+            <div class="result radius">
+                <style>
+                	.scope {
+                		padding: 20px;
+                	}
+                	.scope div {
+                		background-color: #ffb366;
+                	}
+                	.scope .c1 {
+                		background-color: #ffff66;
+                	}
+                	#id {
+                		background-color: #98ff66;
+                	}
+                	.scope aside {
+                		background-color: #6698ff;
+                	}
+                    /* добавь код здесь... */
+                    .scope .c1 {
+                        border-top-left-radius: 20px;
+                        background: linear-gradient(#ffff66, #6698ff);
+                    }
+
+                    #id {
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        background: linear-gradient(to right, #98ff66, #6698ff);
+                    }
+                </style>
+
+                <div class="scope scope_1">
+                    <div></div>
+                    <div class="c1"></div>
+                    <div id="id"></div>
+                    <aside></aside>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/3.png" alt="Цель 3">
+            </div>
+        </div>
+    </body>
+</html>

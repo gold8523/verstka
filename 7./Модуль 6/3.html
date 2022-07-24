@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Псевдоклассы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №3</h1>
+        <p>
+            Добавь стили элементам в таблице по макету.<br>
+            Первая строка: цвет фона - #666, цвет текста - #fff<br>
+            Чётные строки: цвет фона - #f0f0f0
+        </p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                    /* добавь код здесь... */
+                    table { 
+                        width: 100%; /* Ширина таблицы */
+                        margin: 10px; /* Внешние отступы */
+                        border-spacing: 0; /* Расстояние между ячейками */
+                    }
+
+                    tr:first-child {
+                        background-color: #666;
+                        color: #fff;
+                    }
+
+                    tr:nth-child(even) {
+                        background-color: #f0f0f0;
+                    }
+                </style>
+
+                <div class="scope scope_10">
+                    <table border="1">
+                        <tr> 
+                            <td>&nbsp;</td><td>2134</td><td>2135</td>
+                            <td>2136</td><td>2137</td><td>2138</td>
+                        </tr>
+                        <tr> 
+                            <td>Нефть</td><td>16</td><td>34</td>
+                            <td>62</td><td>74</td><td>57</td>
+                        </tr>
+                        <tr>
+                            <td>Золото</td><td>4</td><td>69</td>
+                            <td>72</td><td>56</td><td>47</td>
+                        </tr>
+                        <tr>
+                            <td>Дерево</td><td>7</td><td>73</td>
+                            <td>79</td><td>34</td><td>86</td>
+                        </tr>
+                        <tr>
+                            <td>Камни</td><td>23</td><td>34</td>
+                            <td>88</td><td>53</td><td>103</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/3.png" alt="Цель 3">
+            </div>
+        </main>
+    </body>
+</html>

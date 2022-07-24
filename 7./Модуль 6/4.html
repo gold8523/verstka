@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Псевдоэлементы и псевдоклассы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №4</h1>
+        <p>1. Добавь псевдоэлемент с жирным текстом "Важно! " перед фразой "Долгий поиск!"</p>
+        <p>2. Добавь стили placeholder: цвет текста #269090, жирность, внутренний отступ - 5px</p>
+        <p>3. Добавь стили кнопке: текст по центру, закругление 4px, цвет текста - #fff, цвет фона - #2196f3, без рамки</p>
+        <p>4. Добавь стили при наведении курсора на элемент по своему желанию - добавь рамку, измени цвет фона, размер шрифта</p>
+        <p>4. Добавь стили при активации элемента по своему желанию</p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                    /* добавь код здесь... */
+                    .warning {
+                        padding-left: 10px;
+                    }
+                    input[type="search"] { 
+                        border: 1px solid #2196f3; /* Параметры рамки */
+                        padding: 8px;
+                    }
+                    button {
+                        padding: 10px 25px;
+                        border: none;
+                        background-color: #2196f3;
+                        border-radius: 4px;
+                        color: #fff;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+
+                    .warning::before {
+                        content: 'Важно! ';
+                        font-weight: bold;
+                    }
+
+                    input::placeholder {
+                        color: #269090;
+                        font-weight: bold;
+                        padding: 5px;
+                    }
+
+                    button:hover {
+                        border: 3px solid sandybrown;
+                        font-size: 1.1rem;
+                        background-color: seagreen;
+                    }
+
+                    button:active {
+                        background-color: darkcyan;
+                        border: 1px solid slateblue;
+                    }
+                </style>
+
+                <div class="scope scope_10">
+                    <form action="handler.php">
+                        <p class="warning">Долгий поиск!</p>
+                        <p>
+                            <input type="search" placeholder="Поиск по сайту" name="search">
+                            <button>Найти</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/4.png" alt="Цель 4">
+            </div>
+        </main>
+    </body>
+</html>

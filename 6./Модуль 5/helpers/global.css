@@ -1,0 +1,167 @@
+body{
+    font: 15px Helvetica, Arial;
+    margin: 0;
+    padding: 20px;
+}
+
+code{
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 0 4px;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+.results {
+    font-size: 0;
+}
+
+.result {
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    margin: 0 10px 0 0;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.nav {
+    margin: 40px 0 0;
+}
+
+.prev {
+    margin: 0 10px 0 0;
+}
+
+.prev:before {
+    content: '← ';
+}
+
+.next:after {
+    content: ' →';
+}
+
+.scope {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.scope a {
+    text-decoration: none;
+}
+
+.scope_4,
+.scope_5,
+.scope_15 {
+    display: block;
+}
+
+.scope_16 div {
+    background-color: #fff;
+}
+
+.scope_16 div.c2.c3.c4.c5.c6 {
+    background-color: #fff;
+}
+
+.scope_4 article {
+    padding: 10px 0;
+}
+
+.scope_4 hr {
+    margin: 0;
+}
+
+.scope_10 {
+    width: 100%;
+}
+
+.scope_6 {
+    width: 330px;
+}
+
+.scope_5 {
+    width: 300px;
+}
+
+.scope_6 .title {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.scope_18 div {
+    background-color: #ff6698;
+}
+
+.scope_17{
+    width: 400px;
+}
+
+.scope input, .scope textarea {
+    outline: none;
+    margin: 10px;
+}
+
+.scope input[type="color"] {
+    margin: 0;
+}
+
+.scope label {
+    margin: 10px;
+}
+
+.scope a {
+    width: 100%;
+    margin: 10px;
+}
+
+.scope ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scope button {
+    margin: 10px;
+}
+
+.scope > div > img {
+    width: 100px;
+    height: 100px;
+}
+
+.scope > div,
+.scope > aside {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #eee;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.scope > div > div,
+.scope > aside > div,
+.scope > div > aside,
+.scope > aside > aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #eee;
+    box-sizing: border-box;
+}

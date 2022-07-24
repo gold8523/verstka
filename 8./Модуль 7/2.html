@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Тени</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №2</h1>
+        <p>У каждого элемента задано несколько теней, подбери наиболее подходящую тень по макету и доработай её с помощью свойство соседних элементов. Например, для первого блока у подходящей тени нужно изменить цвет, который используется у соседнего свойства.</p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                	.scope div {
+                		background-color: #ffb366;
+                        /* box-shadow: 3px 3px; */
+                        /* box-shadow: 3px 3px darkgreen; */
+                        box-shadow: 3px 3px 3px darkgreen;
+                		/* box-shadow: 0 0 9px black; */
+                	}
+                	.scope .c1 {
+                		background-color: #ffff66;
+                		/* box-shadow: 6px 6px 0px 4px darkred; */
+                		/* box-shadow: 12px 12px 2px -4px darkred; */
+                        box-shadow: 6px 6px 0 2px grey;
+                	}
+                	#id {
+                		background-color: #98ff66;
+                		/* box-shadow: inset 4px 4px rgba(66,66,66,0.5); */
+                		/* box-shadow: inset -2px -2px 0 8px rgba(198,198,198,1); */
+                        box-shadow: inset -2px -2px 8px 0px black;
+						/* box-shadow: inset 0 0 4px 0px darkgreen; */
+                	}
+                	.scope aside {
+                		background-color: #6698ff;
+                		/* box-shadow:  */
+                                    /* 0 0 2px 1px red, */
+						            /* 0 0 2px 2px orange, */
+						            /* 0 0 2px 3px yellow, */
+						            /* 0 0 2px 4px green, */
+						            /* 0 0 2px 5px lightblue, */
+						            /* 0 0 2px 6px blue, */
+						            /* 0 0 2px 7px violet; */
+                        /* box-shadow: 6px 6px 8px -4px rgba(255,255,0,0.75), */
+                                    /* -6px 6px 8px -4px rgba(0,0,255,0.75); */
+                        box-shadow: 0 14px 28px rgba(255,255,0,0.75), 
+                                    0 10px 10px rgba(0,0,0,0.75);
+                	}
+                </style>
+
+                <div class="scope scope_1">
+                    <div></div>
+                    <div class="c1"></div>
+                    <div id="id"></div>
+                    <aside></aside>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/2.png" alt="Цель 2">
+            </div>
+        </div>
+    </body>
+</html>

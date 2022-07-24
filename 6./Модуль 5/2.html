@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS-селекторы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+        <style>
+            #age {
+                width: 80px;
+            }
+            #phone {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Задача №2</h1>
+        <p>Добавь элементы в форму по макету</p>
+
+        <div class="results">
+            <div class="result">
+                <div class="scope scope_5">
+                    <form action="#" method="get">
+                        <p>
+                            <label for="age">Возраст</label>
+                            <!-- Добавь код здесь для поля Возраст -->
+                            <input type="number" name="age" id="age" value="10">
+                        </p>
+                        <p>
+                            <label for="favcolor">Цвет волос</label>
+                            <!-- Добавь код здесь для поля Цвет волос -->
+                            <input type="color" name="favcolor" id="color">
+                        </p>
+                        <p>
+                            <label for="phone">Модель телефона</label>
+                            <!-- Добавь код здесь для поля Модель телефона -->
+                            <select name="phone" id="phone">
+                                <option value="null" disabled>Модель телефона</option>
+                                <option value="Apple">Apple</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Nokia">Nokia</option>
+                                <option value="Huawei">Huawei</option>
+                                <option value="Xiaomi">Xiaomi</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="comment">Комментарий</label><br/>
+                            <!-- Добавь код здесь для поля Комментарий -->
+                            <textarea name="comment" id="comment" cols="30" rows="7">
+                                Ширина 7 строк, высота 30 строк
+                            </textarea>
+                        </p>
+                        <!-- Войти -->
+                        <input type="submit" value="Войти">
+                        <!-- Отмена -->
+                        <input type="button" value="Отмена">
+                    </form>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/2.png" alt="Цель 2">
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №3</h1>
+        <p>Сделай так, чтобы при наведении на элемент он занимал 200px</p>
+        <p>При наведении на 4-ый блок, должен получатся результат как на изображении справа</p>
+
+        <div class="results">
+            <div class="result radius">
+                <style>
+                	.flex {
+                        display: flex;
+                        overflow:hidden;
+                    }
+                    .item {
+                        flex-basis: 20%;
+                        height: 300px;
+                        background-color: #2e5b61;
+                        margin: 1px;
+                        box-shadow: 0 0 19px 3px #000; 
+                        transition: flex 300ms ease;
+                    }
+                    /* добавь код здесь... */
+                    .img4:hover {
+                        flex-basis: 60%;
+                    }
+                </style>
+
+                <div class="flex">
+                    <div class="item img1"></div>
+                    <div class="item img2"></div>
+                    <div class="item img3"></div>
+                    <div class="item img4"></div>
+                    <div class="item img5"></div>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/3.png" alt="Цель 3">
+            </div>
+        </div>
+    </body>
+</html>

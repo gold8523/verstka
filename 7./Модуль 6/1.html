@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Псевдоэлементы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №1</h1>
+        <p>Добавь элементы внутри <code>&lt;p class="zone-empty"&gt;&lt;/p&gt;</code> в правильном порядке:</p>
+        <ul>
+            <li>content</li>
+            <li>color</li>
+            <li>before</li>
+            <li>padding-right</li>
+            <li>p</li>
+        </ul>
+
+        <div class="results">
+            <div class="result empty">
+                <div>
+                    <div><p class="zone-empty">p</p>::<p class="zone-empty">before</p> {</div>
+                    <div><pre>    <p class="zone-empty">content</p>: '¶';</pre></div>
+                    <div><pre>    <p class="zone-empty">padding-right</p>: 1em;</pre></div>
+                    <div><pre>    <p class="zone-empty">color</p>: gray;</pre></div>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

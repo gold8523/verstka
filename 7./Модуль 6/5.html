@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Псевдоэлементы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+    </head>
+    <body>
+        <h1>Задача №5</h1>
+        <p>Стилизуй переключатель по макету. Цвет фона - #f4f4f4. Цвет выбранного элемента - #3197EE. Выравнивание по вертикали - middle</p>
+
+        <div class="results">
+            <div class="result">
+                <style>
+                    form {
+                        margin: 10px;
+                    }
+                    /* добавь код здесь... */
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+
+                    label::before {
+                        content: '';
+                        display: inline-block;
+                        margin-right: 10px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #f4f4f4;
+                        border: 1px solid #f4f4f4;
+                        vertical-align: middle;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                    input[type="checkbox"]:checked + label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        border-width: 6px;
+                        background-color: #3197EE;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                </style>
+
+                <div class="scope scope_10">
+                    <form action="#">
+                        <input type="checkbox" id="yes" name="yes">
+                        <label for="yes">Я согласен</label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/5.png" alt="Цель 5">
+            </div>
+        </main>
+    </body>
+</html>

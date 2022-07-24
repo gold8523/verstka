@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS-селекторы</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="helpers/global.css">
+
+        <style>
+            .agree input {
+                margin-left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Задача №1</h1>
+        <p>Добавь элементы в форму по макету. В этом примере собраны часто используемые элементы поля input.</p>
+
+        <div class="results">
+            <div class="result">
+                <div class="scope scope_5">
+                    <form action="#" method="get">
+                        <!-- добавь код здесь... -->
+                        <p>
+                            <label for="login">Логин</label>
+                            <br>
+                            <!-- Добавь код здесь для поля Логин -->
+                            <input type="text" name="login" id="login" placeholder="Login" value="Tom" >
+                        </p>
+                        <p>
+                            <label for="password">Пароль</label>
+                            <br>
+                            <!-- Добавь код здесь для поля Пароль -->
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </p>
+                        <p>
+                            <label for="gender">Пол:</label>
+                            <br>
+                            <!-- Добавь код здесь для поля Пол -->
+                            <input type="radio" name="gender" id="male"> мужской
+                            <input type="radio" name="gender" id="female"> женский
+                        </p>
+                        <p>
+                            <label class="agree">
+                                <input type="checkbox" name="agree" id="agree">
+                                <!-- Добавь код здесь для checkbox -->
+                                Я хочу отправить данные
+                            </label>
+                        </p>
+                        <!-- Войти -->
+                        <input type="submit" value="Войти">
+                        <!-- Отмена -->
+                        <input type="button" value="Отмена">
+                    </form>
+                </div>
+            </div>
+
+            <div class="result">
+                <img class="goal" src="helpers/goals/1.png" alt="Цель 1">
+            </div>
+        </main>
+    </body>
+</html>
